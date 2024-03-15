@@ -1,9 +1,10 @@
 import 'package:bookly_app/constants.dart';
+import 'package:bookly_app/core/utils/AppRoutes.dart';
 import 'package:bookly_app/core/utils/assets.dart';
 import 'package:bookly_app/features/home/presentation/views/homeview.dart';
 import 'package:bookly_app/features/splach/presentation/views/widgets/sliding_text.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import 'package:go_router/go_router.dart';
 
 class splach_view_body extends StatefulWidget {
   const splach_view_body({super.key});
@@ -58,8 +59,9 @@ class _splach_view_bodyState extends State<splach_view_body>
     Future.delayed(
       const Duration(seconds: 2),
       () {
-        Get.to(() => const homeview(),
-            transition: Transition.fade, duration: ktransitionduration);
+        // Get.to(() => const homeview(),
+        //     transition: Transition.fade, duration: ktransitionduration);
+        GoRouter.of(context).push(AppRouter.khomeview);
       },
     );
   }

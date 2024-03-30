@@ -1,4 +1,3 @@
-
 import 'package:bookly_app/core/utils/styles.dart';
 import 'package:flutter/material.dart';
 
@@ -9,8 +8,7 @@ class customButton extends StatelessWidget {
       required this.color,
       required this.backgroundColor,
       required this.borderRadius,
-       this.fontWeight
-      });
+      this.fontWeight});
 
   final String text;
   final Color color;
@@ -29,7 +27,7 @@ class customButton extends StatelessWidget {
           child: Text(
             text,
             style: styles.TextStyle16.copyWith(
-                color: color, fontWeight: fontWeight ?? FontWeight.w900 ),
+                color: color, fontWeight: fontWeight ?? FontWeight.w900),
           )),
     );
   }

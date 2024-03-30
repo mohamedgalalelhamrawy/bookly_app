@@ -25,7 +25,6 @@ class _splach_view_bodyState extends State<splach_view_body>
     navigteToHome();
   }
 
-
   @override
   void dispose() {
     super.dispose();
@@ -54,7 +53,6 @@ class _splach_view_bodyState extends State<splach_view_body>
     animationController.forward();
   }
 
-  
   void navigteToHome() {
     Future.delayed(
       const Duration(seconds: 2),

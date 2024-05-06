@@ -16,7 +16,11 @@ class bookDetailsSection extends StatelessWidget {
           padding: EdgeInsets.symmetric(
             horizontal: width * 0.22,
           ),
-          child: const featuredListViewItem(),
+          child: const featuredListViewItem(
+              // //////
+              imageURL: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDhTqh_O7DqZuSH5Ut9zz9WtkF79fX19xQaeiVz2mJdOikjbambkE6XgF5Zr4M8KeC_EDChEgb5Glz1aM_6y6-pYFFY5V0PUOXNrYlQDMj0AeMlbbNvwiwbGB8oqvK3iwLjE5twGpq_h-PG7CiQo6_v5yX4FvobyZp-frjU-FhS1kWNbtglTWtTwjtx3II/s1248/Polish_20240112_171040147.jpg",
+              // //////
+          ),
         ),
         const SizedBox(
           height: 43,

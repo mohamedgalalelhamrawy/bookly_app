@@ -4,13 +4,15 @@ import 'package:bookly_app/core/utils/styles.dart';
 
 class bookRating extends StatelessWidget {
   const bookRating(
-      {super.key, this.mainAxisAlignment = MainAxisAlignment.start});
+      {super.key, this.mainAxisAlignment = MainAxisAlignment.start, required this.AvrageRate, required this.CountRate});
   final MainAxisAlignment mainAxisAlignment;
+  final String AvrageRate ;
+  final String CountRate ;
   @override
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: mainAxisAlignment,
-      children: const [
+      children:  [
         Icon(
           FontAwesomeIcons.solidStar,
           color: Color(0xffF4D559),
@@ -20,7 +22,7 @@ class bookRating extends StatelessWidget {
           width: 6.3,
         ),
         Text(
-          "4.8",
+          AvrageRate.toString(),
           style: styles.TextStyle16,
         ),
         SizedBox(
@@ -29,7 +31,7 @@ class bookRating extends StatelessWidget {
         Opacity(
             opacity: 0.5,
             child: Text(
-              "(2390)",
+              CountRate.toString(),
               style: styles.TextStyle14,
             ))
       ],

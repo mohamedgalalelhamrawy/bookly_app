@@ -20,10 +20,9 @@ class featuredBooksListView extends StatelessWidget {
               itemCount: state.books.length,
                 scrollDirection: Axis.horizontal,
                 itemBuilder: (context, index) {
-                  return const Padding(
+                  return  Padding(
                     padding:  EdgeInsets.symmetric(horizontal: 8),
-                    child: featuredListViewItem(imageURL: "https://media.springernature.com/w580h326/nature-cms/uploads/collections/Networks-Collection-img-final-f2c265a59e457f48645e2aa3ff90e942.jpg"
-                    // state.books[index].volumeInfo.imageLinks.thumbnail ,
+                    child: featuredListViewItem(imageURL: state.books[index].volumeInfo.imageLinks.thumbnail ,
                     ),
                   );
                 }),
